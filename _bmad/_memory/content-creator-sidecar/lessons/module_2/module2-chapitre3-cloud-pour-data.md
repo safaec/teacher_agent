@@ -156,14 +156,6 @@ Le **stockage objet** (comme AWS S3) est le plus utilisé en data science car :
 - **Développement** : CSV pour la simplicité
 - **Production** : **Parquet** pour les performances (3-10x plus petit que CSV)
 
-```python
-# Sauvegarde en Parquet (recommandé pour la production)
-df.to_parquet("data.parquet", compression="snappy")
-
-# Lecture
-df = pd.read_parquet("data.parquet")
-```
-
 ---
 
 ### ✍️ Exercice 3.2 : Choix du format (10 min)

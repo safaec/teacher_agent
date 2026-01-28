@@ -2,6 +2,90 @@
 
 ## Current Course
 
+**Module 3 — Intelligence Artificielle : du ML classique aux LLMs**
+- Target audience: Profils en reconversion avec bases Python, notebooks, pipelines (Module 2), prompt engineering (Module 1)
+- Pedagogy: Direct Instruction (scaffolding + systematic progression)
+- Document language: French
+- Pacing: Chapter by chapter
+- Depth: In-depth (step-by-step breakdowns)
+- **Status: 🔄 IN PROGRESS**
+
+---
+
+## Module 3 Progress
+
+### ✅ Chapitre 1 : Introduction à l'IA et au Machine Learning
+- **Status:** Complete
+- **Duration:** 8h
+- **Folder:** `001_Chapitre_1_Introduction_IA_ML/`
+- **Files written:**
+  - Part_1_Quest_ce_que_IA.md (Histoire + Spectre IA→ML→NN→DL→GenAI)
+  - Part_2_Types_Apprentissage.md (Supervisé, Non-supervisé, Renforcement)
+  - Part_3_Paysage_IA.md (Pyramide, Acteurs majeurs, Écosystème technique)
+  - Part_4_Cas_Usage_Reels.md (Recommandation, Fraude, NLP, Vision, Prédictif)
+  - Part_5_Ethique_Limites.md (Biais, Hallucinations, Responsabilité)
+- **Research sources:** TIME, CNBC, ACLU, Marketing AI Institute, Head of AI
+- **Key content:** Full AI chronology (1950-2025), complete spectrum diagram, Netflix/Spotify/Amazon case studies, Amazon recruiting bias case study, EU AI Act overview
+
+
+### ✅ Chapitre 2 : Le Workflow ML
+- **Status:** Complete
+- **Duration:** 10h
+- **Folder:** `002_Chapitre_2_Workflow_ML/`
+- **Files written:**
+  - Part_1_Pipeline_ML.md (Vue d'ensemble, lien Module 2, itération/expérimentation)
+  - Part_2_Train_Test_Validation.md (Généralisation, split 80/20, stratification, data leakage)
+  - Part_3_Pattern_Fit_Predict.ipynb (API universelle sklearn, fit/predict/score, paramètres vs hyperparamètres)
+  - Part_4_Pipelines_Sklearn.ipynb (Pipeline, ColumnTransformer, preprocessing production-ready)
+  - Part_5_Premier_Modele_Complet.ipynb (Workflow end-to-end, baseline DummyClassifier, confusion matrix, joblib)
+- **Research sources:** IBM ML Pipeline, V7 Labs Train/Test Split, Princeton Reproducibility Crisis, scikit-learn docs
+- **Key content:**
+  - Pipeline ML 5 étapes avec diagrammes ASCII
+  - Data leakage prévention (rule: fit on train, transform on all)
+  - Baseline comparison avec DummyClassifier (votre suggestion intégrée!)
+  - Métriques au-delà de .score() : confusion matrix, precision/recall/F1
+  - Model persistence avec joblib.dump()
+
+### ⏳ Chapitre 3 : Algorithmes ML Essentiels
+- **Status:** Pending
+- **Duration:** 10h
+
+### ⏳ Chapitre 4 : Évaluation et Optimisation
+- **Status:** Pending
+- **Duration:** 12h
+
+### ⏳ Chapitre 5 : Réseaux de Neurones (Conceptuel)
+- **Status:** Pending
+- **Duration:** 10h
+
+### ⏳ Chapitre 6 : Des Réseaux aux Transformers + Fine-tuning
+- **Status:** Pending
+- **Duration:** 12h
+
+### ⏳ Chapitre 7 : Embeddings et Recherche Vectorielle
+- **Status:** Pending
+- **Duration:** 10h
+
+### ⏳ Chapitre 8 : RAG — Connecter LLM et Données
+- **Status:** Pending
+- **Duration:** 14h
+
+### ⏳ Chapitre 9 : Agents et Automatisation IA
+- **Status:** Pending
+- **Duration:** 14h
+
+### ⏳ Chapitre 10 : Stratégie IA en Entreprise
+- **Status:** Pending
+- **Duration:** 6h
+
+### ⏳ Chapitre 11 : Projet Intégrateur
+- **Status:** Pending
+- **Duration:** 14h
+
+---
+
+## Previous Course (Completed)
+
 **Module 2 — Pipeline Data : de la collecte à l'analyse en environnement cloud**
 - Target audience: Profils en reconversion avec bases Python, Excel et SQL
 - Pedagogy: Direct Instruction (scaffolding + systematic progression)
