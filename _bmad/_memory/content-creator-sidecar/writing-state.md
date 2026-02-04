@@ -46,39 +46,68 @@
   - Métriques au-delà de .score() : confusion matrix, precision/recall/F1
   - Model persistence avec joblib.dump()
 
-### ⏳ Chapitre 3 : Algorithmes ML Essentiels
-- **Status:** Pending
-- **Duration:** 10h
+### ✅ Chapitre 3 : Algorithmes et Évaluation ML
+- **Status:** Complete
+- **Duration:** 20h (merged from original Chapters 3+4)
+- **Folder:** `003_Chapitre_3_Algorithmes_et_Evaluation_ML/`
+- **Structure:** Each algorithm follows **Hook → Intuition → Construction → Hyperparameters → Evaluation**
+- **Files written:**
+  - Part_1_Regression_Lineaire.ipynb (Zillow hook, moindres carrés, fit_intercept/positive hyperparams, MAE/RMSE/R² evaluation)
+  - Part_2_Regression_Logistique.ipynb (Gmail spam hook, sigmoid, C/penalty/solver hyperparams, Precision/Recall/F1/ROC-AUC)
+  - Part_3_Arbres_Random_Forest.ipynb (Bank loan hook, Gini, max_depth/min_samples hyperparams, Biais-Variance diagnostic, learning curves)
+  - Part_4_KMeans_Clustering.ipynb (Spotify hook, n_clusters/init/n_init hyperparams, silhouette/inertia/elbow evaluation)
+  - Part_5_Selection_Validation_Optimisation.ipynb (Algorithm selection flowchart, K-Fold CV, GridSearchCV/RandomizedSearchCV, Pipeline integration)
+- **Research sources:** Zillow Zestimate, IEEE spam detection 2024, Wiley loan prediction 2024, MDPI customer segmentation 2024, Arize AI F1-score, Emerald housing 2024
+- **Key content:**
+  - Consistent pedagogical structure across all algorithms
+  - Real-world hooks for engagement (Zillow, Gmail, Bank, Spotify)
+  - Hyperparameters section with practical comparisons for each algo
+  - Integrated evaluation (metrics applied, not re-explained from Ch2)
+  - Biais-Variance tradeoff with visual learning curves
+  - Complete optimization workflow: Pipeline + CV + GridSearch
 
-### ⏳ Chapitre 4 : Évaluation et Optimisation
+### ✅ Chapitre 4 : Réseaux de Neurones (Conceptuel)
+- **Status:** Complete
+- **Duration:** 12h
+- **Folder:** `004_Chapitre_4_Reseaux_Neurones/`
+- **Structure:** Narrative flow: Problème → Brique → Structure → Vie → Défis → Pratique
+- **Files written:**
+  - Part_1_De_Ingenierie_a_Apprentissage.md (Le "Pourquoi" — Feature Engineering vs Representation Learning)
+  - Part_2_Neurone_Artificiel.md (La Brique — Lien avec Régression Logistique, activations ReLU/Sigmoid/Tanh/Softmax)
+  - Part_3_Architecture_MLP.md (La Structure — Input/Hidden/Output layers, Largeur vs Profondeur, Fully Connected)
+  - Part_4_Mecanique_Apprentissage.md (Le Cerveau — Forward Pass, Loss, Gradient Descent, Backpropagation, Epochs/Batches)
+  - Part_5_Defis_Profondeur.md (Les Solutions — Vanishing Gradients, ReLU, BatchNorm, Dropout)
+  - Part_6_Atelier_Pratique.ipynb (La Pratique — TensorFlow Playground exercices, Keras MNIST, Vocabulaire quiz)
+- **Key content:**
+  - Complete "Eureka moment": Neuron = Logistic Regression
+  - Detailed definitions for ALL new terms (boxed format)
+  - Mountain analogy for Gradient Descent
+  - ASCII diagrams throughout (hierarchical features, backpropagation cycle)
+  - TensorFlow Playground guided exercises (linear, circle, spiral problems)
+  - Full Keras MNIST example with ~97% accuracy
+  - Vocabulary synthesis table
+
+### ⏳ Chapitre 5 : Des Réseaux aux Transformers + Fine-tuning
 - **Status:** Pending
 - **Duration:** 12h
 
-### ⏳ Chapitre 5 : Réseaux de Neurones (Conceptuel)
+### ⏳ Chapitre 6 : Embeddings et Recherche Vectorielle
 - **Status:** Pending
 - **Duration:** 10h
 
-### ⏳ Chapitre 6 : Des Réseaux aux Transformers + Fine-tuning
-- **Status:** Pending
-- **Duration:** 12h
-
-### ⏳ Chapitre 7 : Embeddings et Recherche Vectorielle
-- **Status:** Pending
-- **Duration:** 10h
-
-### ⏳ Chapitre 8 : RAG — Connecter LLM et Données
+### ⏳ Chapitre 7 : RAG — Connecter LLM et Données
 - **Status:** Pending
 - **Duration:** 14h
 
-### ⏳ Chapitre 9 : Agents et Automatisation IA
+### ⏳ Chapitre 8 : Agents et Automatisation IA
 - **Status:** Pending
 - **Duration:** 14h
 
-### ⏳ Chapitre 10 : Stratégie IA en Entreprise
+### ⏳ Chapitre 9 : Stratégie IA en Entreprise
 - **Status:** Pending
 - **Duration:** 6h
 
-### ⏳ Chapitre 11 : Projet Intégrateur
+### ⏳ Chapitre 10 : Projet Intégrateur
 - **Status:** Pending
 - **Duration:** 14h
 
@@ -171,9 +200,31 @@
 | Fil rouge | Capstone project | Hands-on project |
 | Taux de désabonnement | Churn rate | Customer analytics |
 | Aide-mémoire | Cheat sheet | Quick reference |
+| Neurone artificiel | Artificial neuron | Deep Learning unit |
+| Poids | Weights | Learned parameters |
+| Biais | Bias | Learned threshold |
+| Couche cachée | Hidden layer | Intermediate layer |
+| Couche dense | Dense layer | Fully connected |
+| Fonction d'activation | Activation function | Non-linearity |
+| Propagation avant | Forward pass | Prediction step |
+| Rétropropagation | Backpropagation | Gradient calculation |
+| Descente de gradient | Gradient descent | Optimization |
+| Taux d'apprentissage | Learning rate | Step size |
+| Époque | Epoch | Full data pass |
+| Lot | Batch | Data subset |
+| Abandon | Dropout | Regularization |
+| Normalisation par lot | Batch normalization | Stabilization |
+| Gradient évanescent | Vanishing gradient | Deep learning problem |
 
 ## Next Action
 
-**Module 2 is COMPLETE!** 🎉
+**Chapitre 4 : Réseaux de Neurones (Conceptuel) is COMPLETE!** 🎉
+(Full 12h chapter with 6 parts following narrative structure: Problème → Brique → Structure → Vie → Défis → Pratique)
 
-Ready for next module or course content as needed.
+Next chapter to write: **Chapitre 5 : Architectures Spécialisées, Transformers & Fine-tuning** (12h)
+- CNN et RNN (architectures spécialisées pour images/séquences)
+- Limites des RNN → Introduction de l'Attention
+- Architecture Transformer (Encoder-Decoder, Self-Attention)
+- Du Transformer aux LLMs (BERT, GPT)
+- Pre-training vs Fine-tuning (LoRA, QLoRA)
+- Fine-tuning pratique avec Hugging Face

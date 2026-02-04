@@ -3,6 +3,7 @@
 ## Objectifs d'apprentissage
 
 À la fin de cette leçon, vous serez capable de :
+
 - **Expliquer** pourquoi la séparation des données est essentielle pour évaluer un modèle
 - **Implémenter** correctement un train/test split avec scikit-learn
 - **Identifier** et **éviter** le data leakage, l'erreur #1 des débutants
@@ -150,6 +151,7 @@ Décodons ce code ligne par ligne :
 | `random_state=42` | Fixe le hasard pour obtenir les mêmes résultats à chaque exécution |
 
 **Résultat :**
+
 - `X_train`, `y_train` → Pour entraîner le modèle (80%)
 - `X_test`, `y_test` → Pour évaluer le modèle (20%)
 
@@ -208,15 +210,15 @@ X_train, X_test, y_train, y_test = train_test_split(
 │                                                                 │
 │   SANS STRATIFICATION (aléatoire) :                             │
 │   ┌─────────────────────────────────┐  ┌───────────────────┐    │
-│   │ Train: 🟢🟢🟢🟢🟢🟢🟢🟢🔴       │  │ Test: 🟢🟢🟢🔴🔴  │    │
-│   │        (92% / 8%)              │  │       (60% / 40%) │    │
+│   │ Train: 🟢🟢🟢🟢🟢🟢🟢🟢🔴      │  │ Test: 🟢🟢🟢🔴🔴 │    │
+│   │        (92% / 8%)               │  │       (60% / 40%) │    │
 │   └─────────────────────────────────┘  └───────────────────┘    │
 │   ❌ Proportions différentes !                                  │
 │                                                                 │
 │   AVEC STRATIFICATION :                                         │
 │   ┌─────────────────────────────────┐  ┌───────────────────┐    │
-│   │ Train: 🟢🟢🟢🟢🟢🟢🟢🟢🟢🔴    │  │ Test: 🟢🟢🟢🟢🔴  │    │
-│   │        (90% / 10%)             │  │       (90% / 10%) │    │
+│   │ Train: 🟢🟢🟢🟢🟢🟢🟢🟢🟢🔴    │  │ Test: 🟢🟢🟢🟢🔴 │    │
+│   │        (90% / 10%)              │  │       (90% / 10%) │    │
 │   └─────────────────────────────────┘  └───────────────────┘    │
 │   ✅ Mêmes proportions partout !                                │
 │                                                                 │
@@ -238,6 +240,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 Avec train/test, vous avez un problème : comment choisir les meilleurs hyperparamètres ?
 
 **Scénario problématique :**
+
 1. Vous entraînez avec `max_depth=5` → Test accuracy = 0.82
 2. Vous entraînez avec `max_depth=10` → Test accuracy = 0.85
 3. Vous entraînez avec `max_depth=15` → Test accuracy = 0.84
@@ -332,6 +335,7 @@ Une étude de Princeton a montré que le data leakage a affecté **au moins 294 
 > *Source : [Princeton - Leakage and the Reproducibility Crisis in ML-based Science](https://reproducible.cs.princeton.edu/)*
 
 **Exemple réel — Prédiction de suicidalité :**
+
 - Une étude a annoncé 91% de précision pour prédire la suicidalité chez les jeunes
 - L'article a été **rétracté** car le modèle utilisait une sélection de features sur tout le dataset
 - La vraie performance sur de nouvelles données était bien inférieure

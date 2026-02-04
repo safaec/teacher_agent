@@ -31,6 +31,21 @@ Imaginons que vous construisez une voiture. Vous ne commencez pas par peindre la
 
 Un pipeline ML, c'est exactement cela : une **séquence structurée d'étapes** qui transforme des données brutes en un modèle capable de faire des prédictions.
 
+Avant de voir les étapes de la pipeline, qu'est-ce qu'un Modèle en Machine Learning ?
+
+**L'Analogie Humaine**
+
+Imaginez que vous regardez par la fenêtre et voyez des nuages sombres. Votre modèle mental du monde (acquise par l'expérience) vous fait prédire : "Il va pleuvoir".
+
+Un modèle est une représentation simplifiée de la réalité qui permet de faire des prédictions. Nous construisons nos modèles de deux façons :
+
+- En apprenant des autres (parents, mentors)
+- En apprenant par l'expérience
+
+L'Analogie Informatique : Comment les Ordinateurs Apprennent
+
+L'apprentissage machine (Machine Learning) permet aux ordinateurs d'apprendre sans instructions explicites, contrairement à la programmation traditionnelle où on donne des étapes précises.
+
 **Question :** Selon vous, quelle est la PREMIÈRE étape d'un projet ML — choisir l'algorithme ou préparer les données ?
 
 *(Réponse attendue : Préparer les données — un bon algorithme sur de mauvaises données donnera de mauvais résultats)*

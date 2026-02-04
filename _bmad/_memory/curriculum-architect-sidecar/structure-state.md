@@ -714,95 +714,39 @@ print(f"Best score: {grid_search.best_score_}")
 
 ---
 
-## 🌉 BRIDGE : CONCEPTUAL (22h)
+## 🌉 BRIDGE : CONCEPTUAL (24h)
 
 ---
 
 ### Chapitre 5 : Réseaux de Neurones (Conceptuel)
-**Durée : 10h** | **Activité principale :** Playground Exploration
+**Durée : 12h** | **Activité principale :** Playground Exploration
+
+**Objectif :** Comprendre le passage du ML classique au Deep Learning, maîtriser l'architecture universelle (MLP) et comprendre la mécanique d'apprentissage (Backpropagation).
+
+**Narration logique :** Le Problème → La Brique → La Structure → La Vie → Les Défis → La Pratique
+
+> 📄 **Détails complets :** Voir `chap5.md` pour le contenu détaillé des 6 leçons.
+
+| Leçon | Titre | Durée | Focus |
+|-------|-------|-------|-------|
+| 5.1 | De l'Ingénierie à l'Apprentissage | 1h30 | Le "Pourquoi" — Limites du ML, apprentissage de représentation |
+| 5.2 | Le Neurone Artificiel | 2h | La Brique — Lien avec Régression Logistique, activations |
+| 5.3 | L'Architecture Standard — Le MLP | 2h | La Structure — Shallow vs Deep, Fully Connected |
+| 5.4 | La Mécanique d'Apprentissage | 2h30 | Le Cerveau — Forward, Loss, Gradient Descent, Backprop |
+| 5.5 | Les Défis de la Profondeur | 1h30 | Les Solutions — Vanishing gradients, ReLU, BatchNorm, Dropout |
+| 5.6 | Atelier Pratique & Synthèse | 2h30 | La Pratique — TensorFlow Playground, Keras MNIST, Quiz |
+
+**🎯 Activité principale :** Playground Exploration — TensorFlow Playground
+**🎯 Activité secondaire :** Démo Keras — MNIST en 10 lignes
+
+**Transition vers Ch6 :** "Nous avons maîtrisé le MLP, l'architecture universelle. Mais pour les images et le texte, il existe des architectures spécialisées. Direction : CNN, RNN, et les révolutionnaires Transformers."
 
 ---
 
-#### Leçon 5.1 : Le neurone artificiel (2h) — Théorie + Visualisation
-
-| # | Sous-partie | Durée | Contenu |
-|---|-------------|-------|---------|
-| 5.1.1 | Analogie biologique | 30min | Neurone biologique → neurone artificiel. Inputs, poids, sortie |
-| 5.1.2 | Somme pondérée | 30min | z = w₁x₁ + w₂x₂ + ... + b. Chaque input a un poids |
-| 5.1.3 | Fonction d'activation | 30min | Sans activation = régression linéaire. Activation = non-linéarité |
-| 5.1.4 | Activations courantes | 30min | ReLU (max(0,x)) - la plus utilisée. Sigmoid (0-1). Tanh (-1 à 1) |
-
-**Ressources pour Content Creator :**
-- Schéma du neurone artificiel annoté
-- Graphiques des fonctions d'activation
-
----
-
-#### Leçon 5.2 : Couches et architectures (2h) — Théorie + Schémas
-
-| # | Sous-partie | Durée | Contenu |
-|---|-------------|-------|---------|
-| 5.2.1 | La couche d'entrée | 25min | Input layer = vos features. Dimension = nombre de features |
-| 5.2.2 | Les couches cachées | 35min | Hidden layers = représentations apprises. Plus de couches = patterns plus complexes |
-| 5.2.3 | La couche de sortie | 25min | Output layer = prédiction. 1 neurone (régression), N neurones (classification N classes) |
-| 5.2.4 | Architectures typiques | 35min | MLP (feedforward), profondeur vs largeur, règles empiriques |
-
-**Ressources pour Content Creator :**
-- Schéma d'un réseau feedforward
-- Exemples d'architectures pour différentes tâches
-
----
-
-#### Leçon 5.3 : Comment ça apprend (2.5h) — Théorie + Démo
-
-| # | Sous-partie | Durée | Contenu |
-|---|-------------|-------|---------|
-| 5.3.1 | Forward pass | 30min | Input → couches → prédiction. Calcul couche par couche |
-| 5.3.2 | Fonction de perte (Loss) | 30min | "À quel point on se trompe ?". MSE pour régression, Cross-entropy pour classification |
-| 5.3.3 | Gradient descent (intuition) | 45min | Métaphore : descendre la montagne les yeux bandés. Ajuster les poids pour réduire la loss |
-| 5.3.4 | Backpropagation (concept) | 30min | "Qui est responsable de l'erreur ?" Propager l'erreur en arrière. **Pas de formules** |
-| 5.3.5 | Epochs et batch | 15min | Epoch = passage complet des données. Batch = sous-ensemble pour efficacité |
-
-**Ressources pour Content Creator :**
-- Animation du gradient descent
-- Analogie de la montagne expliquée
-
----
-
-#### Leçon 5.4 : Types de réseaux (2h) — Théorie + Exemples
-
-| # | Sous-partie | Durée | Contenu |
-|---|-------------|-------|---------|
-| 5.4.1 | Feedforward (FNN/MLP) | 30min | Données tabulaires. L'architecture de base |
-| 5.4.2 | CNN (Convolutional) | 45min | Images. Convolution = "sliding window". Détecte des patterns spatiaux |
-| 5.4.3 | RNN (Recurrent) | 30min | Séquences. Mémoire des inputs précédents. Texte, audio, time series |
-| 5.4.4 | Quand utiliser quoi ? | 15min | Tableau récapitulatif : type de données → architecture |
-
-**Ressources pour Content Creator :**
-- Visualisations de convolution
-- Schéma de RNN avec "mémoire"
-
----
-
-#### Leçon 5.5 : Du neurone au deep learning (1.5h) — Théorie
-
-| # | Sous-partie | Durée | Contenu |
-|---|-------------|-------|---------|
-| 5.5.1 | Pourquoi "deep" fonctionne | 30min | Plus de couches = abstractions hiérarchiques. Features de bas niveau → haut niveau |
-| 5.5.2 | Défis du deep learning | 30min | Vanishing gradients, coût computationnel, besoin de données |
-| 5.5.3 | Architectures modernes (survol) | 30min | ResNet (skip connections), Dropout, BatchNorm. Techniques qui ont permis le deep |
-
-**🎯 Activité : Playground Exploration** — TensorFlow Playground, manipuler architectures
-**🎯 Activité : Démo Keras** — Entraîner MNIST en 10 lignes de code
-
-**Ressources pour Content Creator :**
-- Lien TensorFlow Playground avec exercices guidés
-- Notebook MNIST minimal
-
----
-
-### Chapitre 6 : Des Réseaux aux Transformers + Fine-tuning
+### Chapitre 6 : Architectures Spécialisées, Transformers & Fine-tuning
 **Durée : 12h** | **Activité principale :** Attention Visualization
+
+> ⚠️ **Note (2026-02-01):** Ce chapitre doit maintenant inclure CNN et RNN (déplacés depuis Ch5) avant les Transformers. Nouvelle progression : CNN/RNN → Limites RNN → Attention → Transformers → Fine-tuning.
 
 ---
 
@@ -1474,14 +1418,14 @@ async def my_tool(param: str) -> str:
 | 2 | Workflow ML | 5 | 18 | 2 | 10h | Track 1 |
 | 3 | Algorithmes ML | 5 | 19 | 2 | 10h | Track 1 |
 | 4 | Évaluation & Optimisation | 6 | 22 | 3 + mini-projet | 12h | Track 1 |
-| 5 | Réseaux de Neurones | 5 | 17 | 2 | 10h | Bridge |
-| 6 | Transformers & Fine-tuning | 6 | 18 | 2 | 12h | Bridge |
+| 5 | Réseaux de Neurones (MLP) | 6 | 19 | 2 | 12h | Bridge |
+| 6 | CNN, RNN, Transformers & Fine-tuning | 6+ | 18+ | 2 | 12h | Bridge |
 | 7 | Embeddings & Vecteurs | 5 | 17 | 2 | 10h | Track 2 |
 | 8 | RAG | 7 | 22 | 2 | 14h | Track 2 |
 | 9 | Agents & Automatisation | 6 | 23 | 3 + mini-projet | 14h | Track 2 |
 | 10 | Stratégie IA | 5 | 12 | 2 | 6h | Track 2 |
 | 11 | Projet Intégrateur | 5 | 14 | PROJECT | 14h | Final |
-| **Total** | | **60 leçons** | **199 sous-parties** | **24+ activités** | **120h** | |
+| **Total** | | **61+ leçons** | **201+ sous-parties** | **24+ activités** | **122h** | |
 
 ---
 
@@ -1512,3 +1456,11 @@ Remaining modules to structure:
 - **2026-01-14:** Module 2 structured — 11 chapters, 65 lessons, 15+ activities
 - **2026-01-26:** Module 1 noted as completed by teacher
 - **2026-01-26:** Module 3 structured — 11 chapters, 60 lessons, 199 sub-parts, 24+ activities, 120h total. Two-Track PBL structure with detailed sub-parts for Content Creator.
+- **2026-02-01:** Chapter 5 rewritten by teacher and refined:
+  - New narrative structure: Problème → Brique → Structure → Vie → Défis → Pratique
+  - Added Lesson 5.1 "De l'Ingénierie à l'Apprentissage" (the WHY)
+  - Extended from 10h to 12h (now 6 lessons)
+  - CNN/RNN moved to Chapter 6 (to be integrated with Transformers)
+  - Bridge section now 24h total (was 22h)
+  - Module 3 total now 122h (was 120h)
+  - Detailed content saved in `chap5.md`
