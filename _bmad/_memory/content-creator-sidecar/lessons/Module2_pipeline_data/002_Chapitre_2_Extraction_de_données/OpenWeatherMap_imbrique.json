@@ -1,0 +1,48 @@
+[
+    {
+        "weather": {
+            "main": "Clear",
+            "description": "ciel dégagé",
+            "temperature": 22.5,
+            "feels_like": 22.1,
+            "humidity": 65
+        },
+        "location": {
+            "city": "Paris",
+            "country": "FR",
+            "coordinates": {
+                "lat": 48.8534,
+                "lon": 2.3488
+            }
+        },
+        "wind": {
+            "speed": 3.6,
+            "direction": "SO"
+        },
+        "dt": 1715932800,
+        "timezone": 7200
+    },
+    {
+        "weather": {
+            "main": "Clouds",
+            "description": "partiellement nuageux",
+            "temperature": 24.2,
+            "feels_like": 23.8,
+            "humidity": 60
+        },
+        "location": {
+            "city": "Lyon",
+            "country": "FR",
+            "coordinates": {
+                "lat": 45.7640,
+                "lon": 4.8357
+            }
+        },
+        "wind": {
+            "speed": 2.8,
+            "direction": "S"
+        },
+        "dt": 1715932800,
+        "timezone": 7200
+    }
+]
